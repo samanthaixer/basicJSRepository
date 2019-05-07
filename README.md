@@ -1,5 +1,13 @@
 # Bank Tech Test
 
+This tech test is an opportunity for me to practice my planning and design skills, and to remind myself how JavaScript works. I'd also like to practice dependency injection.
+
+On top of all of that, this is a chance to showcase my ability to build professional-quality code. Checkout my portfolio to see more on what I consider to be good quality code.
+
+[Sam's portfolio](https://github.com/samanthaixer/Portfolio)
+
+[What code quality means to me]()
+
 ## Specification
 
 ### Requirements
@@ -50,4 +58,4 @@ Transaction - type(credit or debit), amount, date, print
 Account delegates the storing of each transaction to a transaction object
 Account delegates responsibility for printing each individual line to the transaction
 
-When testing the account, should be able to inject transaction objects
+When testing the account, I should be able to inject transaction objects
