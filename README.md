@@ -51,11 +51,23 @@ I want to be able to produce a statement of my account showing the date, an amou
 
 ## Objects
 
-Account - deposit, withdraw, balance, transactions, printStatement
-Transaction - type(credit or debit), amount, date, print
+`Account` - deposit, withdraw, balance, transactions, printStatement
+
+`Transaction` - type(credit or debit), amount, date, print
 
 ## Dependencies
-Account delegates the storing of each transaction to a transaction object
-Account delegates responsibility for printing each individual line to the transaction
+`Account` delegates the storing of each transaction to a `Transaction` object
 
-When testing the account, I should be able to inject transaction objects
+`Account` delegates responsibility for printing each individual line to the transaction
+
+When testing the `Account`, I should be able to inject `Transaction` objects
+
+## Tests
+
+What do I want to test?
+
+### Unit tests
+
+- `Transaction` -  adding a credit transaction, adding a debit transaction, validation?, valid date, readable printing
+
+- `Account` - crediting or debitting the account updates the account balance, statement produces a list of transactions
